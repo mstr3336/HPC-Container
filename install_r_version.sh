@@ -9,5 +9,5 @@ v="3.5.2-1bionic"
 
 sudo apt-get install r-recommended=${v} r-base=${v} r-base-core=${v}
 
-# For Rcurl
-sudo apt-get install libcurl4-openssl-dev
+# For Rcurl, and xml2
+sudo apt-get install libcurl4-openssl-dev libxml2-dev
