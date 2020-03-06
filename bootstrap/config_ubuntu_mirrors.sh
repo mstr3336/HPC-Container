@@ -16,7 +16,7 @@ add-apt-repository -y  multiverse
 
 apt-get -y update
 
-
+apt-get -y install apt-utils
 sed -i $PACKAGE_PAT $SP
 
 echo "${SP} after: $(cat ${SP})"
