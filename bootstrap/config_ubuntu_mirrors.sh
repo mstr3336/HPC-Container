@@ -6,7 +6,7 @@ SP=/etc/apt/sources.list
 
 echo "${SP} before: $(cat ${SP})"
  
-sed -i $PACKAGE_PAT $SP
+#sed -i $PACKAGE_PAT $SP
 
 echo "${SP} after: $(cat ${SP})"
 
