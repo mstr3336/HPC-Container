@@ -6,7 +6,7 @@ Stage: build
  ./bootstrap /bootstrap 
 %post
   cd /bootstrap
-
+  bash ./prepare_filesystem.sh
   bash ./install_dev.sh
   bash ./install_tmux_version.sh
   bash ./install_r_version.sh
