@@ -12,4 +12,4 @@ RUN bash ./install_dev.sh
 RUN bash ./install_tmux_version.sh
 RUN bash ./install_r_version.sh
 
-
+RUN apt-get -y autoremove
