@@ -1,3 +1,5 @@
+apt-get update
+apt-get install software-properties-common
 
 PACKAGE_MIRROR="au"
 PACKAGE_PAT="s|http://us.|http://${PACKAGE_MIRROR}.|g"
