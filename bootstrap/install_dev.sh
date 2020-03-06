@@ -2,8 +2,10 @@
 # Git is mandatory, ag is useful 
 apt-get -y install git wget \
   silversearcher-ag \
-  build-essential
+  build-essential 
 
+# Need ncurses for vim
+apt-get -y install libncurses-dev
 
 # DIY vim because I want +clipboard and +X11 support
 git clone https://github.com/vim/vim.git /bootstrap/vim
