@@ -9,7 +9,8 @@ apt-get -y install git wget \
 git clone https://github.com/vim/vim.git /bootstrap/vim
 
 cd /bootstrap/vim/src
-./configure && make install
+./configure && make
+make install
 
 cd /bootstrap
 
