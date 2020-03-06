@@ -12,6 +12,7 @@ cd tmux-${VERSION}
 ./configure && make
 make install
 
+cd ..
 mv tmux-${VERSION} /usr/local/src
 
 
