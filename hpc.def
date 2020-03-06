@@ -1,0 +1,19 @@
+Bootstrap: library
+From: ubuntu:18.04
+Stage: build
+
+%files
+  
+%post
+  apt-get install git
+
+  git clone https://github.com/mstr3336/mininet_bootstrap
+  cd mininet_bootstrap
+
+  bash post.sh
+
+%labels
+  Author ['mstr3336@uni.sydney.edu.au', 'matthew.strasiotto@gmail.com']
+  Version v0.0.0.9001
+%help
+  Ubuntu 18.04 container with some RSTUDIO 
