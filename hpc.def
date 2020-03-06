@@ -3,14 +3,13 @@ From: ubuntu:18.04
 Stage: build
 
 %files
-  
+ ./bootstrap /bootstrap 
 %post
-  apt-get install git
+  cd /bootstrap
 
-  git clone https://github.com/mstr3336/mininet_bootstrap
-  cd mininet_bootstrap
-
-  bash post.sh
+  bash ./install_dev.sh
+  bash ./install_tmux_version.sh
+  bash ./install_r_version.sh
 
 %labels
   Author ['mstr3336@uni.sydney.edu.au', 'matthew.strasiotto@gmail.com']
