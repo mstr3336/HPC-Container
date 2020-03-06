@@ -9,3 +9,5 @@ echo "${SP} before: $(cat ${SP})"
 sed -i $PACKAGE_PAT $SP
 
 echo "${SP} after: $(cat ${SP})"
+
+apt-get update
