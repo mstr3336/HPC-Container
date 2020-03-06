@@ -15,4 +15,6 @@ Stage: build
   Author ['mstr3336@uni.sydney.edu.au', 'matthew.strasiotto@gmail.com']
   Version v0.0.0.9001
 %help
-  Ubuntu 18.04 container with some RSTUDIO 
+  Ubuntu 18.04 container with Rstudio installed, R, vim and tmux. 
+  Modifications have been made to the filesystem such that it is operable on USYDs HPC,
+  Artemis
