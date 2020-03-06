@@ -2,8 +2,13 @@
 # Git is mandatory, ag is useful 
 apt-get -y install git wget silversearcher-ag
 
-# vim-gtk because I want +clipboard and +X11 support
-apt-get -y install vim-gtk
+# DIY vim because I want +clipboard and +X11 support
+git clone https://github.com/vim/vim.git /bootstrap/vim
+
+cd /bootstrap/vim/src
+make && make install
+
+cd /bootstrap
 
 # ZeroMQ is needed for clustermq communication
 # Add zeromq to sources
