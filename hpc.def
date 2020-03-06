@@ -5,6 +5,7 @@ Stage: build
 %files
  ./bootstrap /bootstrap 
 %post
+  export DEBIAN_FRONTEND=noninteractive
   cd /bootstrap
   bash ./prepare_filesystem.sh
   bash ./config_ubuntu_mirrors.sh
