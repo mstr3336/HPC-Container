@@ -7,14 +7,8 @@ apt-get -y install git wget \
 # Need ncurses for vim
 apt-get -y install libncurses-dev
 
-# DIY vim because I want +clipboard and +X11 support
-git clone https://github.com/vim/vim.git /bootstrap/vim
-
-cd /bootstrap/vim/src
-./configure && make
-make install
-
-cd /bootstrap
+# vim-gtk because I want +clipboard and +X11 support
+apt-get -y install vim-gtk
 
 # ZeroMQ is needed for clustermq communication
 # Add zeromq to sources
