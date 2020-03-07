@@ -10,6 +10,7 @@ apt-get -y install \
    libasound2\ 
    libgles2-mesa-dev
 
-#wget -q https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.2.1578-amd64.deb
-#apt-get -y install ./rstudio-1.2.1578-amd64.deb
-apt-get -y install rstudio
+VERSION="1.1.463-amd64"
+
+wget -q http://download1.rstudio.org/rstudio-${VERSION}.deb
+apt-get -y install ./rstudio-${VERSION}
