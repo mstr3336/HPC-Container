@@ -13,4 +13,5 @@ apt-get -y install \
 VERSION="1.1.463-amd64"
 
 wget -q http://download1.rstudio.org/rstudio-${VERSION}.deb
-apt-get -y install ./rstudio-${VERSION}
+apt-get -y install ./rstudio-${VERSION}.deb
+
