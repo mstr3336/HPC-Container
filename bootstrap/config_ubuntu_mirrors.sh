@@ -11,3 +11,6 @@ sed -i $PACKAGE_PAT $SP
 sed --in-place --regexp-extended $PACKAGE_PAT2 $SP
 
 echo "${SP} after: $(cat ${SP})"
+
+apt-get -y update
+
