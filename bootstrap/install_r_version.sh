@@ -7,7 +7,7 @@ apt-get -y install libcurl4-openssl-dev libxml2-dev
 
 apt-get -y install \
    libnss3 \
-   libasound2\ 
+   libasound2 \ 
    libgles2-mesa-dev
 
 VERSION="1.1.463-amd64"
