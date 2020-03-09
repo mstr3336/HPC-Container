@@ -23,5 +23,9 @@ echo "RSTUDIO DOWNLOADED
 
 ls -alt
 
+apt-get -y install --fix-broken
+apt-get -y update
+apt-get -y upgrade
+
 apt-get -y install ./rstudio-${VERSION}.deb
 
