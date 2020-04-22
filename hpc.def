@@ -9,10 +9,8 @@ Stage: build
   cd /bootstrap
   bash ./prepare_filesystem.sh
   bash ./config_ubuntu_mirrors.sh 
-  # bash ./add_ubuntu_mirrors.sh
-  # bash ./config_ubuntu_mirrors.sh
-  # bash ./install_dev.sh
-  # bash ./install_tmux_version.sh
+  bash ./install_dev.sh
+  bash ./install_tmux_version.sh
   bash ./install_r_version.sh
 
 %labels
