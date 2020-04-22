@@ -8,16 +8,16 @@ Stage: build
   export DEBIAN_FRONTEND=noninteractive
   cd /bootstrap
   bash ./prepare_filesystem.sh
-  bash ./config_ubuntu_mirrors.sh 
-  # bash ./add_ubuntu_mirrors.sh
-  # bash ./config_ubuntu_mirrors.sh
-  # bash ./install_dev.sh
-  # bash ./install_tmux_version.sh
+  bash ./config_ubuntu_mirrors.sh
+  bash ./add_ubuntu_sources.sh
+  bash ./config_ubuntu_mirrors.sh
+  bash ./install_dev.sh
+  bash ./install_tmux_version.sh
   bash ./install_r_version.sh
 
 %labels
   Author ['mstr3336@uni.sydney.edu.au', 'matthew.strasiotto@gmail.com']
-  Version v0.0.0.9001
+  Version v0.0.0.9002
 %help
   Ubuntu 18.04 container with Rstudio installed, R, vim and tmux. 
   Modifications have been made to the filesystem such that it is operable on USYDs HPC,
