@@ -2,7 +2,8 @@
 # Git is mandatory, ag is useful 
 apt-get -y install git wget \
   silversearcher-ag \
-  build-essential 
+  build-essential \
+  ctags
 
 # Need ncurses for vim
 apt-get -y install libncurses-dev
