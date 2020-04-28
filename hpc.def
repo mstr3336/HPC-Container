@@ -19,8 +19,12 @@ Stage: build
 
 %labels
   Author ['mstr3336@uni.sydney.edu.au', 'matthew.strasiotto@gmail.com']
-  Version v0.0.0.9003
+  Version v0.0.0.9004
 %help
   Ubuntu 18.04 container with R, vim and tmux installed. 
   Modifications have been made to the filesystem such that it is operable on USYDs HPC,
-  Artemis
+  Artemis.
+  Additionally, several wrappers for invoking HPC host system binaries have been added.
+  These simply call the same binary on the container's host via ssh. 
+  This was done to avoid having to install tools such as PBS Pro 13, and deal with 
+  compatibility issues between these two.
