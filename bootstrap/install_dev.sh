@@ -6,11 +6,26 @@ apt-get -y install git wget \
   ctags
 
 # Need ncurses for vim
-apt-get -y install libncurses-dev
+apt-get -y install \
+  libncurses-dev \
+  libx11-dev libxtst-dev libxt-dev libsm-dev libxpm-dev
+
+git clone https://github.com/vim/vim.git
+
+pushd vim/src
+./configure \
+  --enable-cscope \
+  --enable-gui=auto \
+  --enable-gtk2-check \
+  --enable-gnome-check \
+  --with-features=huge \
+  --with-x
+make install
+popd
 
 # vim-gtk because I want +clipboard and +X11 support
 # https://github.com/tmux/tmux/releases/download/3.0a/tmux-3.0a.tar.gz
-apt-get -y install vim-gtk tmux
+apt-get -y install tmux
 
 # ZeroMQ is needed for clustermq communication
 # Add zeromq to sources
