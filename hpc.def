@@ -12,7 +12,6 @@ Stage: build
   bash ./add_ubuntu_sources.sh
   bash ./config_ubuntu_mirrors.sh
   bash ./install_dev.sh
-  bash ./install_tmux_version.sh
   bash ./install_r_version.sh
 
 %labels

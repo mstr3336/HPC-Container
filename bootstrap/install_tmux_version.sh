@@ -1,3 +1,0 @@
-# https://github.com/tmux/tmux/releases/download/3.0a/tmux-3.0a.tar.gz
-apt-get -y install tmux
-
