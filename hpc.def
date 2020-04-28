@@ -16,6 +16,8 @@ Stage: build
 
   bash ./add_host_binding.bash
   bash ./bind_hpc_cmds.bash
+  mv new_bin/* /usr/local/bin && rmdir new_bin
+  
 
 %labels
   Author ['mstr3336@uni.sydney.edu.au', 'matthew.strasiotto@gmail.com']
