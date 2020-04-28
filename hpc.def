@@ -1,5 +1,5 @@
-Bootstrap: library
-From: ubuntu:18.04
+Bootstrap: docker
+From: ubuntu:16.04
 Stage: build
 
 %files
@@ -20,12 +20,15 @@ Stage: build
 
 %labels
   Author ['mstr3336@uni.sydney.edu.au', 'matthew.strasiotto@gmail.com']
-  Version v0.0.0.9004
+  Version v0.0.0.9006
 %help
-  Ubuntu 18.04 container with R, vim and tmux installed. 
+  Ubuntu 16.04 container with R, vim and tmux installed. 
   Modifications have been made to the filesystem such that it is operable on USYDs HPC,
   Artemis.
   Additionally, several wrappers for invoking HPC host system binaries have been added.
   These simply call the same binary on the container's host via ssh. 
   This was done to avoid having to install tools such as PBS Pro 13, and deal with 
   compatibility issues between these two.
+
+  Ubuntu 16.04 was chosen to maintain kernel compatibility with RHEL6 - Linux 2.6
+  Ubuntu 18 and greater require a minimum kernel version of ~3.2, the HPC has 2.6
