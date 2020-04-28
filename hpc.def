@@ -14,7 +14,6 @@ Stage: build
   bash ./install_dev.sh
   bash ./install_r_version.sh
 
-  bash ./add_host_binding.bash
   bash ./bind_hpc_cmds.bash
   mv new_bin/* /usr/local/bin && rmdir new_bin
   

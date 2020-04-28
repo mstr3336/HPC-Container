@@ -1,4 +1,6 @@
 #!/bin/bash
+source ./add_host_binding.bash
+
 TEST_BIN_DIR=new_bin
 
 hpc_binaries=( $(cat hpc_host_bin_list) )
