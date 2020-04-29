@@ -16,10 +16,7 @@ Stage: build
 
   bash ./bind_hpc_cmds.bash
   mv new_bin/* /usr/local/bin && rmdir new_bin
-%runscript
-  if [ ! -z "$RENV_PATHS_CACHE"  ]; then
-    export RENV_PATHS_CACHE="${RENV_PATHS_CACHE}_container"
-  fi
+  
 
 %labels
   Author ['mstr3336@uni.sydney.edu.au', 'matthew.strasiotto@gmail.com']
