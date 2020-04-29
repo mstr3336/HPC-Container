@@ -2,6 +2,9 @@
 # Git is mandatory, ag is useful 
 apt-get -y install git wget  apt-transport-https \
   silversearcher-ag \
+  gcc \
+  clang \
+  pkg-config \
   build-essential \
   ctags \
   libssl-dev
