@@ -1,6 +1,6 @@
 
 # Git is mandatory, ag is useful 
-apt-get -y install git wget \
+apt-get -y install git wget  apt-transport-https \
   silversearcher-ag \
   build-essential \
   ctags
