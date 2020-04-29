@@ -3,7 +3,8 @@
 apt-get -y install git wget  apt-transport-https \
   silversearcher-ag \
   build-essential \
-  ctags
+  ctags \
+  libssl-dev
 
 # Need ncurses for vim
 apt-get -y install \
